@@ -22,8 +22,8 @@ from task4.views import main1, bascet, menu
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', main1.as_view()),
-    path('games/', menu),
-    path('cart/', bascet.as_view()),
+    path('platform/', main1.as_view()),
+    path('platform/games/', menu),
+    path('platform/cart/', bascet.as_view()),
     # path('menu/',menu),
 ]

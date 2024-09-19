@@ -6,13 +6,13 @@ from django.views.generic import TemplateView
 
 
 class main1(TemplateView):
-    template_name = 'index1.html'
+    template_name = 'platform.html'
 
 # class shop(TemplateView):
-#     template_name = 'index2.html'
+#     template_name = 'games.html'
 
 class bascet(TemplateView):
-    template_name = 'index3.html'
+    template_name = 'cart.html'
 
 def menu(request):
     mydict = {'games': ["Atomic Heart", "Cyberpunk 2077"]}
@@ -20,7 +20,7 @@ def menu(request):
     context={
          'mydict':mydict,
     }
-    return render(request, 'index2.html', context)
+    return render(request, 'games.html', context)
 
 # {% list = mydict|setdefault('games') %}
 
